@@ -8,14 +8,20 @@ $(document).ready(function() {
 
     if (animal === "cat") {
       $('#cat').show();
+      $('#dog').hide();
+      $('#elk').hide();
     }
 
     else if (animal === "dog") {
       $('#dog').show();
+      $('#cat').hide();
+      $('#elk').hide();
     }
 
     else {
       $('#elk').show();
+      $('#cat').hide();
+      $('#dog').hide();
     }
     event.preventDefault();
   });
